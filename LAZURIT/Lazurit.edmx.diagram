@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="de609639b86b4dd5a2eb747e79c44180" Name="Diagram1">
+        <EntityTypeShape EntityType="LAZURITModel.AgentSet" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LAZURITModel.ClientSet" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LAZURITModel.OrderSet" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LAZURITModel.TovarSet" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="LAZURITModel.FK_OrderSet_AgentSet" ManuallyRouted="false" />
+        <AssociationConnector Association="LAZURITModel.FK_OrderSet_ClientSet" ManuallyRouted="false" />
+        <AssociationConnector Association="LAZURITModel.FK_OrderSet_TovarSet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

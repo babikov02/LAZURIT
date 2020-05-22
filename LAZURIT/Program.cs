@@ -8,6 +8,7 @@ namespace LAZURIT
 {
     static class Program
     {
+        public static LAZURITEntities lazur = new LAZURITEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace LAZURIT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormMenu());
         }
     }
 }
