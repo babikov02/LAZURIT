@@ -6,6 +6,12 @@ using System.Windows.Forms;
 
 namespace LAZURIT
 {
+    public struct User
+    {
+        public string login;
+        public string password;
+        public string type;
+    }
     static class Program
     {
         public static LAZURITEntities lazur = new LAZURITEntities();
@@ -17,7 +23,7 @@ namespace LAZURIT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMenu());
+            Application.Run(new FormAutorization());
         }
     }
 }

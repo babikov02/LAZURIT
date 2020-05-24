@@ -93,6 +93,7 @@
             this.buttonOrder.TabIndex = 4;
             this.buttonOrder.Text = "Заказы";
             this.buttonOrder.UseVisualStyleBackColor = false;
+            this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
             // 
             // labelHello
             // 
@@ -115,6 +116,7 @@
             this.labelLazur.Size = new System.Drawing.Size(265, 63);
             this.labelLazur.TabIndex = 6;
             this.labelLazur.Text = "LAZURIT";
+            this.labelLazur.Click += new System.EventHandler(this.labelLazur_Click);
             // 
             // FormMenu
             // 

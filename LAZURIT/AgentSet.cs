@@ -26,7 +26,7 @@ namespace LAZURIT
         public string MiddleName { get; set; }
         public string Phone { get; set; }
         public int Salary { get; set; }
-        public double PersentSales { get; set; }
+        public Nullable<double> PersentSales { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderSet> OrderSet { get; set; }

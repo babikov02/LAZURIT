@@ -15,7 +15,7 @@
           <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Salary" Type="int" Nullable="false" />
-          <Property Name="PersentSales" Type="float" Nullable="false" />
+          <Property Name="PersentSales" Type="float" />
         </EntityType>
         <EntityType Name="ClientSet">
           <Key>
@@ -36,7 +36,6 @@
           <Property Name="IdClient" Type="int" Nullable="false" />
           <Property Name="IdAgent" Type="int" Nullable="false" />
           <Property Name="IdTovar" Type="int" Nullable="false" />
-          <Property Name="Price" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="TovarSet">
           <Key>
@@ -49,6 +48,7 @@
           <Property Name="Lenght" Type="float" Nullable="false" />
           <Property Name="Width" Type="float" Nullable="false" />
           <Property Name="Height" Type="float" Nullable="false" />
+          <Property Name="Price" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -129,7 +129,7 @@
           <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Salary" Type="Int32" Nullable="false" />
-          <Property Name="PersentSales" Type="Double" Nullable="false" />
+          <Property Name="PersentSales" Type="Double" />
           <NavigationProperty Name="OrderSet" Relationship="Self.FK_OrderSet_AgentSet" FromRole="AgentSet" ToRole="OrderSet" />
         </EntityType>
         <EntityType Name="ClientSet">
@@ -152,7 +152,6 @@
           <Property Name="IdClient" Type="Int32" Nullable="false" />
           <Property Name="IdAgent" Type="Int32" Nullable="false" />
           <Property Name="IdTovar" Type="Int32" Nullable="false" />
-          <Property Name="Price" Type="Int32" Nullable="false" />
           <NavigationProperty Name="AgentSet" Relationship="Self.FK_OrderSet_AgentSet" FromRole="OrderSet" ToRole="AgentSet" />
           <NavigationProperty Name="ClientSet" Relationship="Self.FK_OrderSet_ClientSet" FromRole="OrderSet" ToRole="ClientSet" />
           <NavigationProperty Name="TovarSet" Relationship="Self.FK_OrderSet_TovarSet" FromRole="OrderSet" ToRole="TovarSet" />
@@ -168,6 +167,7 @@
           <Property Name="Lenght" Type="Double" Nullable="false" />
           <Property Name="Width" Type="Double" Nullable="false" />
           <Property Name="Height" Type="Double" Nullable="false" />
+          <Property Name="Price" Type="Int32" Nullable="false" />
           <NavigationProperty Name="OrderSet" Relationship="Self.FK_OrderSet_TovarSet" FromRole="TovarSet" ToRole="OrderSet" />
         </EntityType>
         <EntityType Name="Users">
@@ -272,7 +272,6 @@
                 <ScalarProperty Name="IdClient" ColumnName="IdClient" />
                 <ScalarProperty Name="IdAgent" ColumnName="IdAgent" />
                 <ScalarProperty Name="IdTovar" ColumnName="IdTovar" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -286,6 +285,7 @@
                 <ScalarProperty Name="Lenght" ColumnName="Lenght" />
                 <ScalarProperty Name="Width" ColumnName="Width" />
                 <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

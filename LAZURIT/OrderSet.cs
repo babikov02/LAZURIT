@@ -18,7 +18,6 @@ namespace LAZURIT
         public int IdClient { get; set; }
         public int IdAgent { get; set; }
         public int IdTovar { get; set; }
-        public int Price { get; set; }
     
         public virtual AgentSet AgentSet { get; set; }
         public virtual ClientSet ClientSet { get; set; }

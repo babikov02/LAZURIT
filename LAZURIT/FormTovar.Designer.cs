@@ -43,26 +43,29 @@
             this.textBoxHeight = new System.Windows.Forms.TextBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.listViewDivan = new System.Windows.Forms.ListView();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonDel = new System.Windows.Forms.Button();
-            this.listViewKrovat = new System.Windows.Forms.ListView();
-            this.listViewKreslo = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDel = new System.Windows.Forms.Button();
+            this.listViewKrovat = new System.Windows.Forms.ListView();
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listViewKreslo = new System.Windows.Forms.ListView();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.labelPrice = new System.Windows.Forms.Label();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelLazurit
@@ -226,97 +229,11 @@
             this.listViewDivan.Location = new System.Drawing.Point(139, 58);
             this.listViewDivan.MultiSelect = false;
             this.listViewDivan.Name = "listViewDivan";
-            this.listViewDivan.Size = new System.Drawing.Size(415, 305);
+            this.listViewDivan.Size = new System.Drawing.Size(479, 363);
             this.listViewDivan.TabIndex = 13;
             this.listViewDivan.UseCompatibleStateImageBehavior = false;
             this.listViewDivan.View = System.Windows.Forms.View.Details;
             this.listViewDivan.SelectedIndexChanged += new System.EventHandler(this.listViewDivan_SelectedIndexChanged);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(283, 369);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(83, 23);
-            this.buttonAdd.TabIndex = 14;
-            this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
-            // buttonEdit
-            // 
-            this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonEdit.ForeColor = System.Drawing.Color.White;
-            this.buttonEdit.Location = new System.Drawing.Point(372, 369);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(93, 23);
-            this.buttonEdit.TabIndex = 15;
-            this.buttonEdit.Text = "Изменить";
-            this.buttonEdit.UseVisualStyleBackColor = false;
-            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
-            // 
-            // buttonDel
-            // 
-            this.buttonDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDel.ForeColor = System.Drawing.Color.White;
-            this.buttonDel.Location = new System.Drawing.Point(471, 369);
-            this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(83, 23);
-            this.buttonDel.TabIndex = 16;
-            this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = false;
-            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
-            // 
-            // listViewKrovat
-            // 
-            this.listViewKrovat.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15});
-            this.listViewKrovat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listViewKrovat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.listViewKrovat.FullRowSelect = true;
-            this.listViewKrovat.GridLines = true;
-            this.listViewKrovat.HideSelection = false;
-            this.listViewKrovat.Location = new System.Drawing.Point(139, 58);
-            this.listViewKrovat.MultiSelect = false;
-            this.listViewKrovat.Name = "listViewKrovat";
-            this.listViewKrovat.Size = new System.Drawing.Size(415, 305);
-            this.listViewKrovat.TabIndex = 17;
-            this.listViewKrovat.UseCompatibleStateImageBehavior = false;
-            this.listViewKrovat.View = System.Windows.Forms.View.Details;
-            this.listViewKrovat.SelectedIndexChanged += new System.EventHandler(this.listViewKrovat_SelectedIndexChanged);
-            // 
-            // listViewKreslo
-            // 
-            this.listViewKreslo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
-            this.listViewKreslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listViewKreslo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.listViewKreslo.FullRowSelect = true;
-            this.listViewKreslo.GridLines = true;
-            this.listViewKreslo.HideSelection = false;
-            this.listViewKreslo.Location = new System.Drawing.Point(139, 58);
-            this.listViewKreslo.MultiSelect = false;
-            this.listViewKreslo.Name = "listViewKreslo";
-            this.listViewKreslo.Size = new System.Drawing.Size(415, 305);
-            this.listViewKreslo.TabIndex = 18;
-            this.listViewKreslo.UseCompatibleStateImageBehavior = false;
-            this.listViewKreslo.View = System.Windows.Forms.View.Details;
-            this.listViewKreslo.SelectedIndexChanged += new System.EventHandler(this.listViewKreslo_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -346,33 +263,69 @@
             this.columnHeader5.Text = "Высота";
             this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columnHeader6
+            // buttonAdd
             // 
-            this.columnHeader6.Text = "Название";
-            this.columnHeader6.Width = 98;
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.Location = new System.Drawing.Point(347, 427);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(83, 25);
+            this.buttonAdd.TabIndex = 14;
+            this.buttonAdd.Text = "Создать";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // columnHeader7
+            // buttonEdit
             // 
-            this.columnHeader7.Text = "Материал";
-            this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader7.Width = 99;
+            this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonEdit.Location = new System.Drawing.Point(436, 427);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(93, 25);
+            this.buttonEdit.TabIndex = 15;
+            this.buttonEdit.Text = "Изменить";
+            this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
-            // columnHeader8
+            // buttonDel
             // 
-            this.columnHeader8.Text = "Длина";
-            this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader8.Width = 72;
+            this.buttonDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDel.ForeColor = System.Drawing.Color.White;
+            this.buttonDel.Location = new System.Drawing.Point(535, 427);
+            this.buttonDel.Name = "buttonDel";
+            this.buttonDel.Size = new System.Drawing.Size(83, 25);
+            this.buttonDel.TabIndex = 16;
+            this.buttonDel.Text = "Удалить";
+            this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
-            // columnHeader9
+            // listViewKrovat
             // 
-            this.columnHeader9.Text = "Ширина";
-            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader9.Width = 82;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Высота";
-            this.columnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.listViewKrovat.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            this.listViewKrovat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewKrovat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.listViewKrovat.FullRowSelect = true;
+            this.listViewKrovat.GridLines = true;
+            this.listViewKrovat.HideSelection = false;
+            this.listViewKrovat.Location = new System.Drawing.Point(139, 58);
+            this.listViewKrovat.MultiSelect = false;
+            this.listViewKrovat.Name = "listViewKrovat";
+            this.listViewKrovat.Size = new System.Drawing.Size(479, 363);
+            this.listViewKrovat.TabIndex = 17;
+            this.listViewKrovat.UseCompatibleStateImageBehavior = false;
+            this.listViewKrovat.View = System.Windows.Forms.View.Details;
+            this.listViewKrovat.SelectedIndexChanged += new System.EventHandler(this.listViewKrovat_SelectedIndexChanged);
             // 
             // columnHeader11
             // 
@@ -402,12 +355,91 @@
             this.columnHeader15.Text = "Высота";
             this.columnHeader15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // listViewKreslo
+            // 
+            this.listViewKreslo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader16});
+            this.listViewKreslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewKreslo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.listViewKreslo.FullRowSelect = true;
+            this.listViewKreslo.GridLines = true;
+            this.listViewKreslo.HideSelection = false;
+            this.listViewKreslo.Location = new System.Drawing.Point(139, 58);
+            this.listViewKreslo.MultiSelect = false;
+            this.listViewKreslo.Name = "listViewKreslo";
+            this.listViewKreslo.Size = new System.Drawing.Size(479, 363);
+            this.listViewKreslo.TabIndex = 18;
+            this.listViewKreslo.UseCompatibleStateImageBehavior = false;
+            this.listViewKreslo.View = System.Windows.Forms.View.Details;
+            this.listViewKreslo.SelectedIndexChanged += new System.EventHandler(this.listViewKreslo_SelectedIndexChanged);
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Название";
+            this.columnHeader6.Width = 98;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Материал";
+            this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader7.Width = 99;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Длина";
+            this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader8.Width = 72;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Ширина";
+            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader9.Width = 82;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Высота";
+            this.columnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Цена";
+            this.columnHeader16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelPrice.Location = new System.Drawing.Point(15, 380);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(45, 16);
+            this.labelPrice.TabIndex = 19;
+            this.labelPrice.Text = "Цена";
+            // 
+            // textBoxPrice
+            // 
+            this.textBoxPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.textBoxPrice.Location = new System.Drawing.Point(12, 399);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(121, 22);
+            this.textBoxPrice.TabIndex = 20;
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPrice_KeyPress);
+            // 
             // FormTovar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(570, 399);
+            this.ClientSize = new System.Drawing.Size(630, 504);
+            this.Controls.Add(this.textBoxPrice);
+            this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.listViewKreslo);
             this.Controls.Add(this.listViewKrovat);
             this.Controls.Add(this.buttonDel);
@@ -429,6 +461,7 @@
             this.Controls.Add(this.labelLazurit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTovar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Товары";
             this.Load += new System.EventHandler(this.FormTovar_Load);
             this.ResumeLayout(false);
@@ -472,5 +505,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.TextBox textBoxPrice;
     }
 }

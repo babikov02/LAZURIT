@@ -15,6 +15,8 @@ namespace LAZURIT
         public FormMenu()
         {
             InitializeComponent();
+            if (FormAutorization.users.type == "agent") buttonAgent.Enabled = false;
+            labelHello.Text = "Приветствую тебя, " + FormAutorization.users.login;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,6 +40,17 @@ namespace LAZURIT
         {
             Form formTovar = new FormTovar();
             formTovar.Show();
+        }
+
+        private void buttonOrder_Click(object sender, EventArgs e)
+        {
+            Form formOrder = new FormOrder();
+            formOrder.Show();
+        }
+
+        private void labelLazur_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

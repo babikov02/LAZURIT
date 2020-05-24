@@ -32,7 +32,7 @@ namespace LAZURIT
                     ListViewItem item = new ListViewItem(new string[]
                     {
                         tovar.Name, tovar.Material, tovar.Lenght.ToString(),
-                        tovar.Width.ToString(), tovar.Height.ToString()
+                        tovar.Width.ToString(), tovar.Height.ToString(), tovar.Price.ToString()
                     });
 
                     item.Tag = tovar;
@@ -44,7 +44,7 @@ namespace LAZURIT
                     ListViewItem item = new ListViewItem(new string[]
                     {
                         tovar.Name, tovar.Material, tovar.Lenght.ToString(),
-                        tovar.Width.ToString(), tovar.Height.ToString()
+                        tovar.Width.ToString(), tovar.Height.ToString(), tovar.Price.ToString()
                     });
 
                     item.Tag = tovar;
@@ -56,7 +56,7 @@ namespace LAZURIT
                     ListViewItem item = new ListViewItem(new string[]
                     {
                         tovar.Name, tovar.Material, tovar.Lenght.ToString(),
-                        tovar.Width.ToString(), tovar.Height.ToString()
+                        tovar.Width.ToString(), tovar.Height.ToString(), tovar.Price.ToString()
                     });
 
                     item.Tag = tovar;
@@ -88,6 +88,7 @@ namespace LAZURIT
                 textBoxLenght.Text = "";
                 textBoxWidth.Text = "";
                 textBoxHeight.Text = "";
+                textBoxPrice.Text = "";
             }
             else if (comboBoxType.SelectedIndex == 1)
             {
@@ -101,6 +102,7 @@ namespace LAZURIT
                 textBoxLenght.Text = "";
                 textBoxWidth.Text = "";
                 textBoxHeight.Text = "";
+                textBoxPrice.Text = "";
             }
             else if (comboBoxType.SelectedIndex == 2)
             {
@@ -114,6 +116,7 @@ namespace LAZURIT
                 textBoxLenght.Text = "";
                 textBoxWidth.Text = "";
                 textBoxHeight.Text = "";
+                textBoxPrice.Text = "";
             }
         }
 
@@ -127,6 +130,7 @@ namespace LAZURIT
                 textBoxLenght.Text = tovar.Lenght.ToString();
                 textBoxWidth.Text = tovar.Width.ToString();
                 textBoxHeight.Text = tovar.Height.ToString();
+                textBoxPrice.Text = tovar.Price.ToString();
             }
             else
             {
@@ -135,6 +139,7 @@ namespace LAZURIT
                 textBoxLenght.Text = "";
                 textBoxWidth.Text = "";
                 textBoxHeight.Text = "";
+                textBoxPrice.Text = "";
             }
         }
 
@@ -148,6 +153,7 @@ namespace LAZURIT
                 textBoxLenght.Text = tovar.Lenght.ToString();
                 textBoxWidth.Text = tovar.Width.ToString();
                 textBoxHeight.Text = tovar.Height.ToString();
+                textBoxPrice.Text = tovar.Price.ToString();
             }
             else
             {
@@ -156,6 +162,7 @@ namespace LAZURIT
                 textBoxLenght.Text = "";
                 textBoxWidth.Text = "";
                 textBoxHeight.Text = "";
+                textBoxPrice.Text = "";
             }
         }
 
@@ -169,6 +176,7 @@ namespace LAZURIT
                 textBoxLenght.Text = tovar.Lenght.ToString();
                 textBoxWidth.Text = tovar.Width.ToString();
                 textBoxHeight.Text = tovar.Height.ToString();
+                textBoxPrice.Text = tovar.Price.ToString();
             }
             else
             {
@@ -177,6 +185,7 @@ namespace LAZURIT
                 textBoxLenght.Text = "";
                 textBoxWidth.Text = "";
                 textBoxHeight.Text = "";
+                textBoxPrice.Text = "";
             }
         }
 
@@ -189,6 +198,7 @@ namespace LAZURIT
             tovar.Lenght = Convert.ToDouble(textBoxLenght.Text);
             tovar.Width = Convert.ToDouble(textBoxWidth.Text);
             tovar.Height = Convert.ToDouble(textBoxHeight.Text);
+            tovar.Price = Convert.ToInt32(textBoxPrice.Text);
             
 
             if (comboBoxType.SelectedIndex == 0)
@@ -223,6 +233,7 @@ namespace LAZURIT
                     tovar.Lenght = Convert.ToDouble(textBoxLenght.Text);
                     tovar.Width = Convert.ToDouble(textBoxWidth.Text);
                     tovar.Height = Convert.ToDouble(textBoxHeight.Text);
+                    tovar.Price = Convert.ToInt32(textBoxPrice.Text);
 
                     Program.lazur.SaveChanges();
 
@@ -240,6 +251,7 @@ namespace LAZURIT
                     tovar.Lenght = Convert.ToDouble(textBoxLenght.Text);
                     tovar.Width = Convert.ToDouble(textBoxWidth.Text);
                     tovar.Height = Convert.ToDouble(textBoxHeight.Text);
+                    tovar.Price = Convert.ToInt32(textBoxPrice.Text);
 
                     Program.lazur.SaveChanges();
 
@@ -257,6 +269,7 @@ namespace LAZURIT
                     tovar.Lenght = Convert.ToDouble(textBoxLenght.Text);
                     tovar.Width = Convert.ToDouble(textBoxWidth.Text);
                     tovar.Height = Convert.ToDouble(textBoxHeight.Text);
+                    tovar.Price = Convert.ToInt32(textBoxPrice.Text);
 
                     Program.lazur.SaveChanges();
 
@@ -284,6 +297,8 @@ namespace LAZURIT
                     textBoxLenght.Text = "";
                     textBoxWidth.Text = "";
                     textBoxHeight.Text = "";
+                    textBoxPrice.Text = "";
+
                 }
                 else if (comboBoxType.SelectedIndex == 1)
                 {
@@ -300,6 +315,7 @@ namespace LAZURIT
                     textBoxLenght.Text = "";
                     textBoxWidth.Text = "";
                     textBoxHeight.Text = "";
+                    textBoxPrice.Text = "";
                 }
                 else
                 {
@@ -316,6 +332,7 @@ namespace LAZURIT
                     textBoxLenght.Text = "";
                     textBoxWidth.Text = "";
                     textBoxHeight.Text = "";
+                    textBoxPrice.Text = "";
                 }
             }
             catch
@@ -346,6 +363,15 @@ namespace LAZURIT
         {
             char number = e.KeyChar;
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8)
             {
                 e.Handled = true;
             }
