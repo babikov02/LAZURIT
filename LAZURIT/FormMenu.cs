@@ -30,8 +30,14 @@ namespace LAZURIT
 
         private void buttonAgent_Click(object sender, EventArgs e)
         {
-            Form formAgentSet = new FormAgent();
-            formAgentSet.Show();
+            Form formAgent = new FormAgent();
+            formAgent.Show();
+        }
+
+        private void buttonTovar_Click(object sender, EventArgs e)
+        {
+            Form formTovar = new FormTovar();
+            formTovar.Show();
         }
     }
 }

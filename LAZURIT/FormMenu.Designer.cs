@@ -77,6 +77,7 @@
             this.buttonTovar.TabIndex = 3;
             this.buttonTovar.Text = "Товары";
             this.buttonTovar.UseVisualStyleBackColor = false;
+            this.buttonTovar.Click += new System.EventHandler(this.buttonTovar_Click);
             // 
             // buttonOrder
             // 

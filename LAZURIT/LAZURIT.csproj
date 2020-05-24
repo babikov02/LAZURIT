@@ -79,6 +79,12 @@
     <Compile Include="FormClient.Designer.cs">
       <DependentUpon>FormClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTovar.Designer.cs">
+      <DependentUpon>FormTovar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lazurit.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,6 +108,9 @@
     <Compile Include="TovarSet.cs">
       <DependentUpon>Lazurit.tt</DependentUpon>
     </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>Lazurit.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClient.resx">
       <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTovar.resx">
+      <DependentUpon>FormTovar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

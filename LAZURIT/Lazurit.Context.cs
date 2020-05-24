@@ -29,5 +29,6 @@ namespace LAZURIT
         public virtual DbSet<ClientSet> ClientSet { get; set; }
         public virtual DbSet<OrderSet> OrderSet { get; set; }
         public virtual DbSet<TovarSet> TovarSet { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

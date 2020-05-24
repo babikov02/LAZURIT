@@ -50,6 +50,15 @@
           <Property Name="Width" Type="float" Nullable="false" />
           <Property Name="Height" Type="float" Nullable="false" />
         </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
         <Association Name="FK_OrderSet_AgentSet">
           <End Role="AgentSet" Type="Self.AgentSet" Multiplicity="1" />
           <End Role="OrderSet" Type="Self.OrderSet" Multiplicity="*" />
@@ -91,6 +100,7 @@
           <EntitySet Name="ClientSet" EntityType="Self.ClientSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="OrderSet" EntityType="Self.OrderSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TovarSet" EntityType="Self.TovarSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_OrderSet_AgentSet" Association="Self.FK_OrderSet_AgentSet">
             <End Role="AgentSet" EntitySet="AgentSet" />
             <End Role="OrderSet" EntitySet="OrderSet" />
@@ -160,6 +170,15 @@
           <Property Name="Height" Type="Double" Nullable="false" />
           <NavigationProperty Name="OrderSet" Relationship="Self.FK_OrderSet_TovarSet" FromRole="TovarSet" ToRole="OrderSet" />
         </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
         <Association Name="FK_OrderSet_AgentSet">
           <End Role="AgentSet" Type="Self.AgentSet" Multiplicity="1" />
           <End Role="OrderSet" Type="Self.OrderSet" Multiplicity="*" />
@@ -201,6 +220,7 @@
           <EntitySet Name="ClientSet" EntityType="Self.ClientSet" />
           <EntitySet Name="OrderSet" EntityType="Self.OrderSet" />
           <EntitySet Name="TovarSet" EntityType="Self.TovarSet" />
+          <EntitySet Name="Users" EntityType="Self.Users" />
           <AssociationSet Name="FK_OrderSet_AgentSet" Association="Self.FK_OrderSet_AgentSet">
             <End Role="AgentSet" EntitySet="AgentSet" />
             <End Role="OrderSet" EntitySet="OrderSet" />
@@ -266,6 +286,16 @@
                 <ScalarProperty Name="Lenght" ColumnName="Lenght" />
                 <ScalarProperty Name="Width" ColumnName="Width" />
                 <ScalarProperty Name="Height" ColumnName="Height" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="LAZURITModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
